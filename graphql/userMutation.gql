@@ -1,0 +1,9 @@
+mutation userMutation($input: UserMutationInput!){
+  userMutation(input: $input){
+    username
+    errors{
+      field
+      messages
+    }
+  }
+}

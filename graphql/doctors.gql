@@ -1,0 +1,29 @@
+query doctors($pk: String, $name: String, $spec: String, $number: String, $onlinePay: Boolean, $weekDays: String){
+  doctors(pk: $pk, name:$name, spec: $spec, number: $number, onlinePay: $onlinePay, weekDays: $weekDays){
+    edges{
+      node{
+        pk
+        name
+        number
+        onlinePay
+        experienceYears
+        address
+        phone
+        spec{
+          id
+          name
+        }
+        weekDays
+        comments{
+          author{
+            name
+          }
+          createdAt
+          title
+          text
+          rate
+        }
+      }
+    }
+  }
+}

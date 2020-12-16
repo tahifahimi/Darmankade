@@ -1,0 +1,11 @@
+mutation commentMutation($input: CommentMutationInput!){
+  commentMutation(input: $input){
+    author{
+      name
+    }
+    createdAt
+    title
+    text
+    rate
+  }
+}

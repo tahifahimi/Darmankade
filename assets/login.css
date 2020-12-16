@@ -1,0 +1,113 @@
+body{
+    direction: rtl;
+    background-color: #fafafa;
+    margin: 0;
+    font-family: BYekan,'BYekan',tahoma;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.right-hand {
+    width: 35%;
+    background-color: #1780df;
+}
+.right-hand > img {
+    margin: auto;
+    width: 50%;
+    display: block;
+    margin-top: 40%;
+}
+.right-hand > h2 {
+    text-align: center;
+    color: white;
+}
+.right-hand > h5 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.left-hand {
+    width: 65%;
+    text-align: center;
+}
+.left-hand > h4 {
+    font-size: 20px;
+    padding-top: 20%;
+    font-weight: 600;
+    color: #3b4157;
+}
+.mobile-fieldset {
+    text-align: right;
+    color: #6e7794;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 4px 5px;
+}
+.mobile-fieldset > input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 22px;
+    height: 100%;
+    background-color: transparent;
+}
+.mobile-fieldset > input::placeholder {
+    font-size: 18px;
+    color: #cdcdcd;
+}
+.mobile-fieldset:focus-within {
+    border-color: #007bff;
+}
+
+button {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.login-button {
+    background-color: #fb815e;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 15px 5px;
+    font-size: 16px;
+}
+.moaref {
+    border: 2px solid #fb815e;
+    color: #fb815e;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem !important;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.moaref:hover {
+    color: white;
+    background-color: #fb815e;
+}
+.google-logo {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+}
+legend {
+    width: auto;
+    font-size: inherit;
+}

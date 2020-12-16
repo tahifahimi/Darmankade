@@ -1,0 +1,149 @@
+body{
+    direction: rtl;
+    background-color: #fafafa;
+    margin: 0;
+    font-family: BYekan,'BYekan',tahoma;
+    line-height: 1.5;
+    text-align: right;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+    align-items: center;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+    background-color: #1780df;
+    color: white;
+}
+
+button {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-slate {
+    color: #3b4157;
+}
+.text-steel {
+    color: #6e7794;
+}
+
+.text-ocean {
+    color: #1780df;
+}
+
+.default-button {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #fb815e;
+    color: #fb815e;
+    transition: 0.3s;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.default-button:hover {
+    background-color: #fb815e;
+    color: white;
+}
+
+/* HEADER CSS */
+.nav-links {
+    font-size: 14px;
+}
+.nav-links > div > a > svg {
+    width: 21px;
+    height: 21px;
+}
+.nav-links > div > a:hover {
+    color: #ff6237;
+    text-decoration: none;
+}
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+.login-button {
+    display: flex;
+    background-color: #ededed;
+    color: #1780df;
+    border-radius: 5px !important;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+}
+.login-button:hover {
+    color: #fb815e;
+}
+
+/* FOOTER CSS */
+.centered-ul {
+    list-style-type: none;
+}
+.centered-ul > li {
+    border-top: 1px solid white;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.centered-ul > li:hover {
+    background-color: white;
+    color: #1780df;
+}
+.footer-image {
+    border-radius: 20px;
+    background-color: white;
+    width: 100px;
+    height: 110px;
+}
+.footer-social-media > svg {
+    width: 40px;
+    height: 40px;
+}
+.footer-copyright {
+    background-color: white;
+    font-size: 14px;
+}

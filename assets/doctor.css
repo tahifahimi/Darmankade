@@ -1,0 +1,81 @@
+input::placeholder {
+    font-size: 12px;
+}
+.my-card {
+    border-radius: 10px;
+}
+.my-card-header {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.doctor-card {
+    border-radius: 10px;
+}
+.doctor-card:hover {
+    border-color: #fb815e;
+    cursor: pointer;
+}
+.doctor-address-container {
+    border-radius: 10px;
+    background-color: #e5f2fe;
+}
+.my-button {
+    border-radius: 10px;
+    background-color: #fb815e;
+    color: white;
+    transition: 0.4s;
+}
+.my-button:hover {
+    background-color: #ff633b;
+}
+
+.button-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 15px 10px 10px 15px;
+    height: 100%;
+    width: 20%;
+    transition: 0.4s;
+}
+.my-button:hover > .button-overlay {
+    width: 100%;
+    border-radius: 10px;
+}
+.button-overlay:hover {
+    width: 100%;
+    border-radius: 10px;
+}
+.my-icon {
+    position: absolute;
+    color: white;
+}
+.my-icon:hover {
+    cursor: pointer;
+    fill: #fb815e;
+}
+
+.favorite-icon:hover {
+    color: #fb815e !important;
+}
+.favorite-button {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ededed;
+}
+
+.date-disabled {
+    background-color: #ededed;
+    color: #acadaf;
+}
+.reserve-button > h5:after {
+    content: "۱۹:۰۰";
+}
+.reserve-button:hover > h5:after {
+    content: "رزرو کردن";
+    font-size: 14px;
+}

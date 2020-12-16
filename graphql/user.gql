@@ -1,0 +1,23 @@
+query{
+  user{
+    id
+    username
+    firstName
+    lastName
+    mobile
+    type
+    doctor{
+      id
+      spec {
+        id
+        name
+      }
+      number
+      onlinePay
+      experienceYears
+      address
+      phone
+      weekDays
+    }
+  }
+}

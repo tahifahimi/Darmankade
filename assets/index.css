@@ -1,0 +1,665 @@
+body{
+    direction: rtl;
+    background-color: #fafafa;
+    margin: 0;
+    font-family: BYekan,'BYekan',tahoma;
+    line-height: 1.5;
+}
+header {
+    grid-area: header;
+    display: flex;
+    padding: 0 12% 0 12%;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+    background-color: #1780df;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+    align-items: center;
+}
+
+button {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-slate {
+    color: #3b4157;
+}
+.text-steel {
+    color: #6e7794;
+}
+.mx-20 {
+    margin: 0 20px;
+}
+
+.line-height-1-5 {
+    line-height: 1.5;
+}
+
+.justified-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.justified-flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.default-button {
+    cursor: pointer;
+    border: none !important;
+    border-radius: 10px;
+    background-color: #fb815e;
+    color: white;
+    transition: 0.3s;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.default-button:hover {
+    background-color: #ff6237;
+}
+
+/* HEADER CSS */
+.header-logo{
+    width: 15%;
+}
+.header-navigation-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: auto;
+    width: 70%;
+    padding-top: 16px;
+    vertical-align: middle;
+}
+.header-navigation-container > a {
+    font-size: 1rem;
+    padding-left: 1%;
+    text-decoration: none;
+}
+.header-navigation-container > a > div {
+    display: flex;
+}
+.header-navigation-container > a > div:hover {
+    color: #fb815e;
+}
+.header-navigation-container > a > div > svg{
+    margin-left:7px;
+    width: 1rem;
+    height: 1rem;
+}
+.header-navigation-container > a > div > span{
+    margin-left:15px
+}
+.header-login{
+    display: flex;
+    width: 15%;
+    margin: auto;
+    justify-content: flex-end;
+}
+.header-login > button {
+    display: flex;
+    background-color: #ededed;
+    color: #1780df;
+    border-radius: 5px !important;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+}
+.header-login > button:hover {
+    color: #fb815e;
+}
+.header-login > button > svg {
+    transform: scaleX(-1);
+    font-size: 16px;
+    margin-right: 5px;
+}
+.header-profession-block {
+    display: none;
+    
+}
+.profession-link:hover + .header-profession-block{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 90px;
+    right: 0;
+}
+.header-profession-block:hover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 90px;
+    right: 0;
+}
+.header-consultant-block {
+    display: none;
+}
+.consultant-link:hover + .header-consultant-block{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 90px;
+    right: 0;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.3;
+    background-color: black;
+}
+.modal {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    width: 60%;
+    opacity: 1;
+    background-color: white;
+}
+.modal:hover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 90px;
+    right: 0;
+}
+
+/* SEARCH BAR CSS */
+.search-container {
+    width: 77%;
+    height: 34vh;
+    min-height: 210px;
+    border-radius: 20px !important;
+    margin: auto;
+    margin-top: 3vh;
+    background-image: url(images/search-background.png);
+    background-size: cover;
+    background-color: #1780df;
+}
+
+.search-bar-title {
+    text-align: center;
+    padding: 5vh 0 5vh 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.search-bar-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+}
+.search-input {
+    width: 38%;
+    border-radius: 0 15px 15px 0 !important;
+    border: 0 !important;
+    padding-right: 10px;
+    color: #495057;
+    font-size: 1.3rem;
+}
+.search-input::placeholder{
+    color: #ced4da;
+    font-size: 1rem;
+}
+.search-city {
+    width: 10%;
+    outline: none;
+    height: 100%;
+}
+.search-button {
+    width: 12%;
+    height: 100%;
+    border-radius: 15px 0 0 15px !important;
+}
+.search-icon {
+    color: #acadaf;
+    
+    align-self: center;
+    
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.search-map-icon {
+    border-right: 1px solid #dee2e6!important;
+    padding-right: 0.5rem !important;
+}
+.search-text-input {
+    width: 10%;
+    padding-right: 5px;
+    font-size: 100%;  
+}
+
+/* BEST PRODESSIONS CSS */
+.best-professions-container {
+    width: 77%;
+    margin: auto;
+}
+
+.best-professions-header {
+    width: 100%;
+    display: flex;
+    margin-top: 10vh;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.col-6 {
+    width: 50%;
+}
+.right {
+    text-align: right;
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+.left {
+    text-align: left;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+.left > span {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.see-all{
+    color: #1780df;
+}
+.see-all:hover {
+    color: #fb815e;
+    cursor: pointer;
+}
+
+.best-profession-content {
+    margin-top: 5vh;
+}
+.profession-item {
+    border: 1px solid rgba(0,0,0,.125)!important;
+    border-radius: 10px;
+    height: 150px;
+    width: 125px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.profession-item:hover {
+    box-shadow: 0px 2px 5px 0.5px rgb(197, 197, 197);
+}
+
+.profession-item > span {
+    color: #3b4157;
+    font-weight: 700 !important;
+}
+
+.profession-image-holder {
+    height: 85px;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    display: block;
+}
+
+.profession-image-holder > img {
+    margin-top: 20px;
+}
+
+/* COMMENTS CSS */
+.comments-container {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+}
+.comments-description-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.comments-description-container > div {
+    margin: auto;
+    width: 50%;
+}
+.comments-box-container {
+    width: 50%;
+}
+.comment-image {
+    position: relative;
+    top: -10%;
+    right: 7%;
+    width: 50px;
+    z-index: 1;
+}
+.comments-area {
+    position: relative;
+    top: -7.5%;
+    height: 370px;
+    margin-left: 200px;
+    border-radius: 20px;
+    border: 1px solid #1780df;
+    background-color: #e5f2fe;
+}
+.comments-area::after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 0;
+    border-right: 1px solid #1780df;
+    border-bottom: 1px solid #1780df;
+    border-left: 0;
+    bottom: -16px;
+    left: 80px;
+    content: "";
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #e5f2fe;
+    z-index: 1;
+}
+.comments-comment {
+    height: 55%;
+    margin: 30px;
+}
+.comments-comment-doctor-info {
+    display: flex;
+    border-top: 2px dashed #6e7794;
+    width: 98%;
+    height: 30%;
+    margin: auto;
+}
+.comments-doctor-image {
+    width: 50%;
+    display: flex;
+}
+.comments-doctor-image > img {
+    width: 75px;
+    border-radius: 100%;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+/* SPECIAL SERVICES CSS */
+.speial-services-container {
+    width: 100%;
+    background-image: url(images/special-services.png);
+    background-size: cover;
+    margin-top: 15vh;
+}
+.speial-services-container {
+    color: white;
+    text-align: center;
+}
+.speial-services-container > h1 {
+    padding: 5vh;
+}
+
+.speial-services-content {
+    display: flex;
+    justify-content: center;
+}
+.speial-services-content > div {
+    width: 20%;
+    margin: 0 50px;
+}
+.speial-services-content > div > img {
+    width: 100%;
+}
+.speial-services-content > div > button {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 10vh;
+    font-weight: 700;
+}
+
+/* DOWNLOAD CSS */
+.download-container{
+    width: 80%;
+    margin: 20vh auto;
+}
+.download-block {
+    display: block;
+    text-align: center;
+    width: 50%;
+    padding: 0 5vw;
+}
+.download-block > img {
+    width: 100%;
+    line-height: 30px;
+}
+.download-block > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.download-block > div > a > img {
+    width: 27px;
+    height: 31px;
+    margin: 0 0.5rem;
+}
+.align-right {
+    text-align: right !important;
+}
+.download-header-text {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 20px 0 0;
+}
+.download-text {
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 20px;
+}
+.download-mobile-input {
+    margin-right: 20px;
+    padding: 16px 15px;
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 0.25rem !important;
+    height: 100% !important;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    color: #495057;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+.download-mobile-input::placeholder{
+    font-size: small;
+    color: #ced4da;
+}
+.download-mobile-input:focus {
+    border-color: #007bff;
+}
+.download-button-container {
+    display: block;
+    position: relative;
+    width: 40%;
+}
+
+.download-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    color: white;
+    background-color: #fb815e;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.download-phone-icon {
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.download-button-overlay {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 20px 10px 10px 20px;
+    transition: 0.4s;
+    
+}
+.download-button-overlay:hover {
+    width: 100%;
+    border-radius: 10px;
+}
+.download-button:hover + .download-button-overlay {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER CSS */
+.footer-top {
+    width: 100%;
+    color: white;
+}
+.footer-top > img {
+    width: 10%;
+    margin: 5vh auto 0 auto;
+    display: block;
+}
+.footer-middle {
+    display: flex;
+    margin-top: 30px;
+}
+.footer-middle > div {
+    width: 30%;
+    margin: auto;
+}
+.footer-middle > #footer-middle-center {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#footer-middle-center > #middle-line {
+    width: 50%;
+    height: 120%;
+    border-left: 1px solid white;
+    display: block;
+    margin-top: 20px;
+}
+.centered-ul {
+    list-style-type: none;
+    width: 40%;
+    margin: auto;
+    padding: 0;
+}
+.centered-ul > li {
+    border-top: 1px solid white;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.centered-ul > li:hover {
+    background-color: white;
+    color: #1780df;
+}
+.footer-social-media-container {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    margin-top: 0;
+}
+.footer-social-media-container > svg {
+    margin: auto;
+    width: 40px;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    width: 27%;
+    color: white;
+    margin: 9% auto auto;
+    line-height: 1.5rem;
+}
+
+.subscribe-form {
+    display: grid;
+    grid-gap: 3px;
+}
+.subscribe-form > input {
+    height: 35px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.subscribe-form > #first-name {
+    grid-row: 1;
+    grid-column: 1;
+}
+.subscribe-form > #last-name {
+    grid-row: 1;
+    grid-column: 2;
+}
+.subscribe-form > #email {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+.subscribe-form > #submit {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    width: auto;
+    height: 48px;
+}
+.subscribe-form > #submit > button {
+    position: inherit;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.authorities > img {
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 95px;
+    height: 110px;
+    margin: 8px;
+}
+.footer-copyright {
+    background-color: white;
+    display: grid;
+    font-size: 14px;
+}
+.footer-copyright > #copyright {
+    grid-row: 1;
+    grid-column: 1;
+}
+.footer-copyright > #author {
+    grid-row: 1;
+    grid-column: 2;
+}
